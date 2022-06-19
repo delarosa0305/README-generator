@@ -46,7 +46,7 @@
 
   This application is covered under Apache-2.0 license.
   
-  https://choosealicense.com/licenses/Apache-2.0/
+  https://choosealicense.com/licenses/apache-2.0/
   
 
   ## <h1 id="contributing">Contributing</h1>
