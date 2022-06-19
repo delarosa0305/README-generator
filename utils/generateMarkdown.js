@@ -1,8 +1,8 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license === "Apache-2.0") {
+  if (license === "apache-2.0") {
     return `
-  <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache-2.0-badge">
+  <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="apache-2.0-badge">
     `;
   }
   if (license === "agpl-3.0") {
@@ -17,12 +17,12 @@ function renderLicenseBadge(license) {
   }
   if (license === "lgpl-3.0") {
     return `
-  <img src="https://img.shields.io/badge/License-LGPL%20v3-blue.svg" alt="lgpl-3.0-badge"> 
+  <img src="https://img.shields.io/badge/License-LGPL%20v3-blue.svg" alt="lgpl-3.0-badge">
     `;
   }
   if (license === "mpl-2.0") {
     return `
-  <img src="https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg" alt="MPL-2.0-badge"> 
+  <img src="https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg" alt="MPL-2.0-badge">
     `;
   }
   if (license === "mit") {
@@ -36,27 +36,27 @@ function renderLicenseBadge(license) {
     `;
   }
 };
-
+ 
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   return `
   https://choosealicense.com/licenses/${license}/
   `;
 };
-
+ 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  
+ 
 };
-
+ 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
   # ${data.name}
-
+ 
    ${renderLicenseBadge(data.license)}
-
+ 
   # Table of Contents
   <ul>
     <li>
@@ -81,36 +81,36 @@ function generateMarkdown(data) {
       <a href="#questions">Questions</a>
     </li>
   </ul>
-
+ 
   ## <h1 id="description">Description</h1>
-
+ 
   ${data.description}
-
+ 
   ## <h1 id="installation">Installation</h1>
-
+ 
   ${data.installation}
-
+ 
   ## <h1 id="usage">Usage</h1>
-
+ 
   ${data.usage}
-
+ 
   ## <h1 id="license">License</h1>
-
+ 
   This application is covered under ${data.license} license.
   ${renderLicenseLink(data.license)}
-
+ 
   ## <h1 id="contributing">Contributing</h1>
-
+ 
   ${data.contributing}
-
+ 
   ## <h1 id="tests">Tests</h1>
-
+ 
   ${data.tests}
-
+ 
   ## <h1 id="questions">Questions</h1>
-
-  If you have question contact my email at ${data.emial} or on gitHub at ${data.github}
+ 
+  If you have question contact my email at ${data.email} or on gitHub at ${data.github}
 `;
 }
-
+ 
 module.exports = generateMarkdown;
