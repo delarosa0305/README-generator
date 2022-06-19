@@ -29,7 +29,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Provide lisence',
-        choices: ['Apache-2.0','agpl-3.0','gpl-3.0','lgpl-3.0','mpl-2.0','mit','bsl-1.0','unlicense']
+        choices: ['Apache-2.0','agpl-3.0','gpl-3.0','lgpl-3.0','mpl-2.0','mit','unlicense']
     },
     {
         type: 'input',
@@ -56,8 +56,6 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, function(err) {
-        console.log(fileName)
-        console.log(data)
         if (err) {
             console.log(err);
             return false;
@@ -73,7 +71,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
         .then(function(data) {
-            writeToFile('README.md', generatePage(data));
+            writeToFile('./README.md', generatePage(data));
             console.log(data);
         })
 }
