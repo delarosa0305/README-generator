@@ -48,7 +48,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'gihub',
+        name: 'github',
         message: 'Enter gitHub username'
     }
 ];
@@ -71,7 +71,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
         .then(function(data) {
-            writeToFile('./README.md', generatePage(data));
+            writeToFile('./jibs/README.md', generatePage(data));
             console.log(data);
         })
 }

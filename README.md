@@ -1,60 +1,20 @@
+## README-Generator
 
-  # 
- 
-   undefined
- 
-  # Table of Contents
-  <ul>
-    <li>
-      <a href="#description">Description</a>
-    </li>
-    <li>
-      <a href="#installation">Installation</a>
-    </li>
-    <li>
-      <a href="#usage">Usage</a>
-    </li>
-    <li>
-      <a href="#license">License</a>
-    </li>
-    <li>
-      <a href="#contributing">Contributing</a>
-    </li>
-    <li>
-      <a href="#tests">Tests</a>
-    </li>
-    <li>
-      <a href="#questions">Questions</a>
-    </li>
-  </ul>
- 
-  ## <h1 id="description">Description</h1>
- 
-  
- 
-  ## <h1 id="installation">Installation</h1>
- 
-  
- 
-  ## <h1 id="usage">Usage</h1>
- 
-  
- 
-  ## <h1 id="license">License</h1>
- 
-  This application is covered under apache-2.0 license.
-  
-  https://choosealicense.com/licenses/apache-2.0/
-  
- 
-  ## <h1 id="contributing">Contributing</h1>
- 
-  
- 
-  ## <h1 id="tests">Tests</h1>
- 
-  
- 
-  ## <h1 id="questions">Questions</h1>
- 
-  If you have question contact my email at undefined or on gitHub at undefined
+## Task
+
+AS A developer
+I WANT a README generator
+SO THAT I can quickly create a professional README for a new project
+
+## Acceptance Criteria
+
+GIVEN a weather dashboard with form inputs WHEN I search for a city THEN I am presented with current and future conditions for that city and that city is added to the search history WHEN I view current weather conditions for that city THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index WHEN I view the UV index THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe WHEN I view future weather conditions for that city THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity WHEN I click on a city in the search history THEN I am again presented with current and future conditions for that city
+
+## Live URL
+
+https://delarosa0305.github.io/README-generator/
+
+## Note
+
+All acceptance criteria have been met, code follows a logical structure and has been updated to generate weather forcast
+

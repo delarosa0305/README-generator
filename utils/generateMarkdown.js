@@ -1,8 +1,8 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license === "Apache-2.0") {
+  if (license === "apache-2.0") {
     return `
-  <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache-2.0-badge">
+  [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
     `;
   } if (license === "agpl-3.0") {
     return `
@@ -91,7 +91,8 @@ function generateMarkdown(data) {
   ## <h1 id="license">License</h1>
  
   This application is covered under ${data.license} license.
-  ${renderLicenseLink(data.license)}
+
+  To learn more about ${data.license} go to ${renderLicenseLink(data.license)}
  
   ## <h1 id="contributing">Contributing</h1>
  
@@ -103,10 +104,8 @@ function generateMarkdown(data) {
  
   ## <h1 id="questions">Questions</h1>
  
-  If you have question contact my email at ${data.emial} or on gitHub at ${data.github}
+  If you have question contact my email at ${data.email} or on gitHub at ${data.github}
 `;
 }
-
-console.log(generateMarkdown);
  
 module.exports = generateMarkdown;
